@@ -1,0 +1,72 @@
+1.Retrieve list of employees whose first nname is john?
+select * from employees where first_name ='john';
+
+2.Retrieve list of employees whose job_id is It_prog and manager_id is 102;
+select * from employees where job_id = 'It_prog' and manager_id= 102;
+
+3.Retrieve list of employees with first_name is 'guy' or last name is khoo?
+select * from employees where first_name ='guy' or last_name ='khoo';
+
+4.Retrieve list of  all employees whose job id is st clerk and whose first name is either julia or james
+select * from employees where job_id='st_clerk' and first_name in('julia','james');
+
+5.select alll the employee whose first name is neither john nor julie and nor james ?
+select * from employees where first_name not in('julia','james','john');
+
+6.select all employee whose name start  with alex?
+select * from employees where first_name like 'alex%';
+
+7.select all employee who has hirwed in the year 1999?
+select * from employees where year(hire_date) =1999;
+
+8.select all employee whose salary is 5 digit and figure start with 17000?
+select * from employees where salary like '1700_';
+
+9.select all employee whose salary is 4 digit and figure end with 800?
+select * from employees where salary like '_800';
+
+10.find out all the salary whose salary second digit is9?
+select * from employees where salary like '_9%';
+
+11.find all the emp who where first name doesn't contains letter x?
+select * from employees where first_name not like '%x%';
+
+12.select all emp whose sal is between 10000 and 20000?
+  select * from employees where salary between 10000 and 20000
+
+13.select all emp whose sal  is between 150000 and  300000?
+select * from employees where (salary*12) between 150000 and 300000;
+
+14.select all the emp whose does not manager?
+select * from employees where manager_id is not null;
+
+15. select all the emp who received the pct_comm?
+select * from employees where commission_pct is not null ;
+
+16.list down all the diff hire date ?
+select distinct hire_date from employees;
+
+17. select all the diff salaries  whose salary is 4 digit and figure last 3 digits are with 800?
+select distinct salary from employees where salary like '_800';
+
+18.s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
